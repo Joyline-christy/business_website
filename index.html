@@ -82,7 +82,8 @@
           flex-direction: column;
           gap: 10px;
           align-items: center;
-          
+          justify-content: center;
+          flex-wrap: wrap;
         }
         h2{
           padding-top: 25px;
@@ -92,6 +93,8 @@
           height: 300px;
           width: 300px;
           margin: 20px;
+          object-fit: cover;
+
         }
         button{
           width: 150px;
@@ -109,6 +112,12 @@
         button:hover{
           background-color: #120d09;
         }
+        @media (max-width: 600px) {
+          .search-container input{
+            margin-bottom: 30px;
+          }
+    
+  }
         
   </style>
 </head>
